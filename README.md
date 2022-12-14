@@ -1,3 +1,3 @@
 # OpenAccess
 
-https://drive.google.com/drive/folders/1pPa8tovSN9g3NyXhHoXBZDTt-9lA1CxO
+https://docs.google.com/document/d/1FCMKyBoJO-LiYXe50TvLNqrqQ6GMAnWIYG_fhylrcYQ/edit
