@@ -107,7 +107,7 @@ var scatterChart = new Chart('myChart3', {
     data: {
        labels: l3,
        datasets: [{
-          label: 'Internet use vs Unemployement',
+          label: 'Internet use , Unemployement',
           data:[{x: 12.38, y: 4.2},
           {x: 14.37, y: 3.8},
           {x: 6.66, y: 3.3},
