@@ -56,9 +56,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">Project</a>
-                <a href="service.html" class="nav-item nav-link">Visualization</a>
+                <a href="service.html" class="nav-item nav-link active">Visualization</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dataset Documentation</a>
                     <div class="dropdown-menu m-0">
@@ -103,23 +103,36 @@
             <div class="div">
                     <p>Here is a graph that shows use of internet</p>
                     <div style="height: 500px">
+                        <canvas id="myChart"></canvas>
+                    </div>
 
+                    <p>Here is a graph that shows the unemployment rate</p>
+                  
                     
-                    <canvas id="myChart"></canvas>
-                </div>
+                    <div style="height: 500px">      
+                        <canvas id="myChart2"></canvas>
+                    </div>
+
+                    <p>Here is a graph Of comaprison between the two graphs</p>
+
+                    <div style="height: 500px">      
+                        <canvas id="myChart3"></canvas>
+                    </div>
+            </div>      
+        </div>
                     
-                    <button onclick="updateConfigByMutating(cha,2011)">2011</button>
-                    <!-- <button onclick="updateConfigByMutating(cha,2012)">2012</button> -->
+                    <!-- <button onclick="updateConfigByMutating(cha,2011)">2011</button>
+                    <button onclick="updateConfigByMutating(cha,2012)">2012</button>
                     <button onclick="updateConfigByMutating(cha,2013)">2013</button>
-                    <!-- <button onclick="updateConfigByMutating(cha,2014)">2014</button> -->
+                    <button onclick="updateConfigByMutating(cha,2014)">2014</button>
                     <button onclick="updateConfigByMutating(cha,2015)">2015</button>
-                    <!-- <button onclick="updateConfigByMutating(cha,2016)">2016</button> -->
+                    <button onclick="updateConfigByMutating(cha,2016)">2016</button>
                     <button onclick="updateConfigByMutating(cha,2017)">2017</button>
-                    <!-- <button onclick="updateConfigByMutating(cha,2018)">2018</button> -->
+                    <button onclick="updateConfigByMutating(cha,2018)">2018</button>
                     <button onclick="updateConfigByMutating(cha,2019)">2019</button>
-                    <!-- <button onclick="updateConfigByMutating(cha,2020)">2020</button> -->
-                    <button onclick="updateConfigByMutating(cha,2021)">2021</button>
-            </div>
+                    <button onclick="updateConfigByMutating(cha,2020)">2020</button>
+                    <button onclick="updateConfigByMutating(cha,2021)">2021</button> -->
+         
             <!-- <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
@@ -200,7 +213,7 @@
                     </div>
                 </div>
             </div> -->
-        </div>
+    
     </div>
     <!-- Service End -->
 

@@ -36,6 +36,123 @@ var cha = new Chart("myChart", {
     }
 });
 
+
+
+var l2 =['Austria', 'Belgium', 'Bulgaria', 'Switzerland', 'Cyprus', 'Czechia', 'Germany', 'Denmark', 'EA19', 'Estonia', 'Greece', 'Spain', 'EU27_2020', 'Finland', 'France', 'Croatia', 'Hungary', 'Ireland', 'Iceland', 'Italy', 'Lithuania', 'Luxembourg', 'Latvia', 'Malta', 'Netherlands', 'Norway', 'Poland', 'Portugal', 'Romania', 'Serbia', 'Sweden', 'Slovenia', 'Slovakia'];
+var d2 = [4.2, 3.8, 3.3, 3.9, 5.2, 1.9, 2.5, 3.6, 5.0, 4.4, 8.6, 9.6, 4.5, 5.2, 4.9, 4.5, 2.7, 4.3, 4.8, 5.3, 5.0, 3.5, 5.1, 2.3, 3.1, 3.2, 2.1, 4.4, 3.2, 6.7, 6.5, 3.1, 4.5];
+var cha1 = new Chart("myChart2", {
+    type: "bar",
+    data: {
+    labels:l2,
+    datasets: [
+        {
+        label: "Percentage of population that are unemployed",
+        data:  d2,
+        backgroundColor: 'rgb(255, 99, 132)',
+        }
+    ]
+    },
+    options: {
+        scales: {
+            y: {
+                ticks: {
+                    autoSkip: false
+                }
+            }
+        },
+
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false
+    }
+});
+
+
+l3 = ['Austria',
+'Belgium',
+'Bulgaria',
+'Croatia',
+'Cyprus',
+'Czechia',
+'Denmark',
+'EU27_2020',
+'Estonia',
+'Finland',
+'France',
+'Germany',
+'Greece',
+'Hungary',
+'Iceland',
+'Ireland',
+'Italy',
+'Latvia',
+'Lithuania',
+'Luxembourg',
+'Malta',
+'Netherlands',
+'Norway',
+'Poland',
+'Portugal',
+'Romania',
+'Serbia',
+'Slovakia',
+'Slovenia',
+'Spain',
+'Sweden',
+'Switzerland']
+
+
+var scatterChart = new Chart('myChart3', {
+    type: 'scatter',
+    data: {
+       labels: l3,
+       datasets: [{
+          label: 'Internet use vs Unemployement',
+          data:[{x: 12.38, y: 4.2},
+          {x: 14.37, y: 3.8},
+          {x: 6.66, y: 3.3},
+          {x: 14.72, y: 4.5},
+          {x: 9.42, y: 5.2},
+          {x: 6.41, y: 1.9},
+          {x: 36.33, y: 3.6},
+          {x: 13.42, y: 4.5},
+          {x: 19.83, y: 4.4},
+          {x: 34.18, y: 5.2},
+          {x: 15.72, y: 4.9},
+          {x: 7.75, y: 2.5},
+          {x: 10.31, y: 8.6},
+          {x: 16.59, y: 2.7},
+          {x: 23.07, y: 4.8},
+          {x: 21.43, y: 4.3},
+          {x: 13.65, y: 5.3},
+          {x: 12.3, y: 5.1},
+          {x: 14.79, y: 5.0},
+          {x: 15.22, y: 3.5},
+          {x: 14.56, y: 2.3},
+          {x: 22.25, y: 3.1},
+          {x: 29.53, y: 3.2},
+          {x: 5.96, y: 2.1},
+          {x: 14.85, y: 4.4},
+          {x: 5.04, y: 3.2},
+          {x: 11.43, y: 6.7},
+          {x: 15.28, y: 4.5},
+          {x: 12.44, y: 3.1},
+          {x: 16.48, y: 9.6},
+          {x: 27.69, y: 6.5},
+          {x: 24.06, y: 3.9}]
+       }]
+    },
+    options: {
+       tooltips: {
+          callbacks: {
+             label: function(tooltipItem, data) {
+                var label = data.labels[tooltipItem.index];
+                return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+             }
+          }
+       }
+    }
+ });
 function updateConfigByMutating(chart,year) {
  
 
@@ -81,56 +198,68 @@ function updateConfigByMutating(chart,year) {
 
     // var l2014 = 
     // var d2014 = 
+    var newlabel=[];
+    var data=[];
 
+    
     if(year = 2011){
-        var label = l2011;
-        var data = d2011;
+        newlabel = l2011;
+        data = d2011;
+        chart.data.labels=newlabel;
+        chart.data.datasets.forEach((dataset) => {
+            dataset.data= data;
+        });
     }
     // if(year = 2012){
     //     var label = l2012;
     //     var data = d2012;
     // }
     if(year = 2013){
-        var label = l2013;
-        var data = d2013;
+         newlabel = l2013;
+         data = d2013;
     }
     // if(year = 2014){
-    //     var label = l2014;
+    //     var newlabel = l2014;
     //     var data = d2014;
     // }
     if(year = 2015){
-        var label = l2015;
-        var data = d2015;
-    }
-    // if(year = 2016){
-    //     var label = l2016;
-    //     var data = d2016;
-    // }
-    if(year = 2017){
-        var label = l2017;
-        var data = d2017;
-    }
-    // if(year = 2018){
-    //     var label = l2018;
-    //     var data = d2018;
-    // }
-    if(year = 2019){
-        var label = l2019;
-        var data = d2019;
-    }
-    // if(year = 2020){
-    //     var label = l2020;
-    //     var data = d2020;
-    // }
-    if(year = 2021){
-        var label = l2021;
-        var data = d2021;
-    }
-
-    chart.data.labels=label;
+         newlabel = l2015;
+         data = d2015;
+         chart.data.labels=newlabel;
         chart.data.datasets.forEach((dataset) => {
             dataset.data= data;
         });
+    }
+    // if(year = 2016){
+    //     var newlabel = l2016;
+    //     var data = d2016;
+    // }
+    // if(year = 2017){
+    //      newlabel = l2017;
+    //      data = d2017;
+    // }
+    console.log(newlabel);
+    // if(year = 2018){
+    //     var newlabel = l2018;
+    //     var data = d2018;
+    // }
+    // if(year = 2019){
+    //      newlabel = l2019;
+    //      data = d2019;
+    // }
+    // if(year = 2020){
+    //     var newlabel = l2020;
+    //     var data = d2020;
+    // }
+
+    // if(year = 2021){
+    //      newlabel = l2021;
+    //      data = d2021;
+    // }
+
+  
+    
+    
     
       
     chart.update();
