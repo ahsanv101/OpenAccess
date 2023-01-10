@@ -1,5 +1,5 @@
 
-// const labels = Utils.months({count: 7});
+// This is first chart
 var l =['Albania', 'Austria', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'EU27_2020', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Montenegro', 'Netherlands', 'North Macedonia', 'Norway', 'Poland', 'Portugal', 'Romania', 'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Turkey']
 var d = [4.91, 12.38, 14.37, 4.43, 6.66, 14.72, 9.42, 6.41, 36.33, 13.42, 19.83, 34.18, 15.72, 7.75, 10.31, 16.59, 23.07, 21.43, 13.65, 12.3, 14.79, 15.22, 14.56, 14.71, 22.25, 6.94, 29.53, 5.96, 14.85, 5.04, 11.43, 15.28, 12.44, 16.48, 27.69, 24.06, 8.97]
         // var yearLabels = data.map(function (d) {
@@ -37,7 +37,7 @@ var cha = new Chart("myChart", {
 });
 
 
-
+// This is second chart
 var l2 =['Austria', 'Belgium', 'Bulgaria', 'Switzerland', 'Cyprus', 'Czechia', 'Germany', 'Denmark', 'EA19', 'Estonia', 'Greece', 'Spain', 'EU27_2020', 'Finland', 'France', 'Croatia', 'Hungary', 'Ireland', 'Iceland', 'Italy', 'Lithuania', 'Luxembourg', 'Latvia', 'Malta', 'Netherlands', 'Norway', 'Poland', 'Portugal', 'Romania', 'Serbia', 'Sweden', 'Slovenia', 'Slovakia'];
 var d2 = [4.2, 3.8, 3.3, 3.9, 5.2, 1.9, 2.5, 3.6, 5.0, 4.4, 8.6, 9.6, 4.5, 5.2, 4.9, 4.5, 2.7, 4.3, 4.8, 5.3, 5.0, 3.5, 5.1, 2.3, 3.1, 3.2, 2.1, 4.4, 3.2, 6.7, 6.5, 3.1, 4.5];
 var cha1 = new Chart("myChart2", {
@@ -68,6 +68,7 @@ var cha1 = new Chart("myChart2", {
 });
 
 
+// This is third chart
 l3 = ['Austria',
 'Belgium',
 'Bulgaria',
@@ -101,6 +102,39 @@ l3 = ['Austria',
 'Sweden',
 'Switzerland']
 
+d5=[{x: 12.38, y: 4.2},
+    {x: 14.37, y: 3.8},
+    {x: 6.66, y: 3.3},
+    {x: 14.72, y: 4.5},
+    {x: 9.42, y: 5.2},
+    {x: 6.41, y: 1.9},
+    {x: 36.33, y: 3.6},
+    {x: 13.42, y: 4.5},
+    {x: 19.83, y: 4.4},
+    {x: 34.18, y: 5.2},
+    {x: 15.72, y: 4.9},
+    {x: 7.75, y: 2.5},
+    {x: 10.31, y: 8.6},
+    {x: 16.59, y: 2.7},
+    {x: 23.07, y: 4.8},
+    {x: 21.43, y: 4.3},
+    {x: 13.65, y: 5.3},
+    {x: 12.3, y: 5.1},
+    {x: 14.79, y: 5.0},
+    {x: 15.22, y: 3.5},
+    {x: 14.56, y: 2.3},
+    {x: 22.25, y: 3.1},
+    {x: 29.53, y: 3.2},
+    {x: 5.96, y: 2.1},
+    {x: 14.85, y: 4.4},
+    {x: 5.04, y: 3.2},
+    {x: 11.43, y: 6.7},
+    {x: 15.28, y: 4.5},
+    {x: 12.44, y: 3.1},
+    {x: 16.48, y: 9.6},
+    {x: 27.69, y: 6.5},
+    {x: 24.06, y: 3.9}]
+
 
 var scatterChart = new Chart('myChart3', {
     type: 'scatter',
@@ -108,38 +142,7 @@ var scatterChart = new Chart('myChart3', {
        labels: l3,
        datasets: [{
           label: 'Internet use , Unemployement',
-          data:[{x: 12.38, y: 4.2},
-          {x: 14.37, y: 3.8},
-          {x: 6.66, y: 3.3},
-          {x: 14.72, y: 4.5},
-          {x: 9.42, y: 5.2},
-          {x: 6.41, y: 1.9},
-          {x: 36.33, y: 3.6},
-          {x: 13.42, y: 4.5},
-          {x: 19.83, y: 4.4},
-          {x: 34.18, y: 5.2},
-          {x: 15.72, y: 4.9},
-          {x: 7.75, y: 2.5},
-          {x: 10.31, y: 8.6},
-          {x: 16.59, y: 2.7},
-          {x: 23.07, y: 4.8},
-          {x: 21.43, y: 4.3},
-          {x: 13.65, y: 5.3},
-          {x: 12.3, y: 5.1},
-          {x: 14.79, y: 5.0},
-          {x: 15.22, y: 3.5},
-          {x: 14.56, y: 2.3},
-          {x: 22.25, y: 3.1},
-          {x: 29.53, y: 3.2},
-          {x: 5.96, y: 2.1},
-          {x: 14.85, y: 4.4},
-          {x: 5.04, y: 3.2},
-          {x: 11.43, y: 6.7},
-          {x: 15.28, y: 4.5},
-          {x: 12.44, y: 3.1},
-          {x: 16.48, y: 9.6},
-          {x: 27.69, y: 6.5},
-          {x: 24.06, y: 3.9}]
+          data:d5
        }]
     },
     options: {
@@ -153,6 +156,13 @@ var scatterChart = new Chart('myChart3', {
        }
     }
  });
+
+
+
+
+
+
+
 function updateConfigByMutating(chart,year) {
  
 
@@ -267,10 +277,405 @@ function updateConfigByMutating(chart,year) {
 }
 
 
-      
+// This is fourth chart      
+d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv', function(err, rows){
+    //   function unpack(rows, key) {
+    //       return rows.map(function(row) { return row[key]; });
+    //   }
+
+      var data = [{
+          type: 'choropleth',
+          locationmode: 'ISO-3',
+          locations: ['ALB',
+          'DZA',
+          'ARG',
+          'AUS',
+          'AUT',
+          'BEL',
+          'BRA',
+          'BGR',
+          'CAN',
+          'CHL',
+          'CHN',
+          'COL',
+          'CRI',
+          'HRV',
+          'CYP',
+          'CZE',
+          'DNK',
+          'DOM',
+          'EST',
+          'FIN',
+          'FRA',
+          'GEO',
+          'DEU',
+          'GRC',
+          'HKG',
+          'HUN',
+          'ISL',
+          'IDN',
+          'IRL',
+          'ISR',
+          'ITA',
+          'JPN',
+          'JOR',
+          'KAZ',
+          'OWID_KOS',
+          'LVA',
+          'LBN',
+          'LTU',
+          'LUX',
+          'MAC',
+          'MYS',
+          'MLT',
+          'MEX',
+          'MDA',
+          'MNE',
+          'NLD',
+          'NZL',
+          'MKD',
+          'NOR',
+          'PER',
+          'POL',
+          'PRT',
+          'QAT',
+          'ROU',
+          'RUS',
+          'SGP',
+          'SVK',
+          'SVN',
+          'KOR',
+          'ESP',
+          'SWE',
+          'CHE',
+          'THA',
+          'TTO',
+          'TUN',
+          'TUR',
+          'ARE',
+          'GBR',
+          'USA',
+          'URY',
+          'VNM'],
+                  //   z: unpack(rows, 'total exports'),
+          z : [405.2588,
+            349.8593,
+            425.3031,
+            502.9006,
+            484.8656,
+            498.5242,
+            407.3486,
+            431.7175,
+            526.6678,
+            458.5709,
+            493.9412,
+            424.9052,
+            427.4875,
+            486.8632,
+            442.8443,
+            487.2501,
+            499.8146,
+            357.7377,
+            519.1429,
+            526.4247,
+            499.3061,
+            401.2881,
+            509.1041,
+            467.0395,
+            526.6753,
+            469.5233,
+            481.5255,
+            397.2595,
+            520.8148,
+            478.9606,
+            484.758,
+            515.9585,
+            408.1022,
+            427.141,
+            347.1259,
+            487.7581,
+            346.5490,
+            472.4066,
+            481.4391,
+            508.6905,
+            430.5782,
+            446.6661,
+            423.2765,
+            416.2293,
+            426.8845,
+            502.9591,
+            509.2707,
+            351.7415,
+            513.1912,
+            397.5414,
+            505.6971,
+            498.1289,
+            401.8874,
+            433.6166,
+            494.6278,
+            535.1002,
+            452.5143,
+            505.2159,
+            517.4367,
+            495.5764,
+            500.1556,
+            492.1982,
+            409.1301,
+            427.2733,
+            361.0555,
+            428.3351,
+            433.5423,
+            497.9719,
+            496.9351,
+            436.5721,
+            486.7738],
+        //   text: unpack(rows, 'state'),
+          zmin: 284,
+          zmax: 570,
+          colorscale: [
+              [0, 'rgb(205, 185, 185)'], [0.2, 'rgb(205, 185, 185)'],
+              [0.4, 'rgb(205, 185, 185)'], [0.6, 'rgb(205, 185, 185)'],
+              [0.8, 'rgb(205, 62, 62)'], [1, 'rgb(205, 0, 0)']
+          ],
+          colorbar: {
+              title: 'Mean performance on reading scale',
+              thickness: 10
+          },
+          marker: {
+              line:{
+                  color: 'rgb(255,255,255)',
+                  width: 2
+              }
+          }
+      }];
+
+
+      var layout = {
+          title: 'Education rate in Europe',
+          geo:{
+              scope: 'europe'
+          },
+          paper_bgcolor:'rgba(0,0,0,0)',
+          plot_bgcolor:'rgba(0,0,0,0)'
+      };
+
+      Plotly.newPlot("myDiv", data, layout, {showLink: false});
+});
 
 
 
+// This is fifth chart
+
+l_int = ['Austria',
+'Belgium',
+'Bulgaria',
+'Croatia',
+'Cyprus',
+'Czechia',
+'Denmark',
+'Estonia',
+'Finland',
+'France',
+'Germany',
+'Greece',
+'Hungary',
+'Ireland',
+'Italy',
+'Latvia',
+'Lithuania',
+'Luxembourg',
+'Malta',
+'Netherlands',
+'Poland',
+'Portugal',
+'Romania',
+'Slovakia',
+'Slovenia',
+'Spain',
+'Sweden']
+
+
+
+d_int=[{x: 484.866, y: 87.529},
+{x: 498.524, y: 91.526},
+{x: 431.717, y: 70.16},
+{x: 486.863, y: 78.321},
+{x: 442.844, y: 90.802},
+{x: 487.25, y: 81.339},
+{x: 499.815, y: 96.549},
+{x: 519.143, y: 89.058},
+{x: 526.425, y: 92.17},
+{x: 499.306, y: 84.8},
+{x: 509.104, y: 89.813},
+{x: 467.039, y: 78.116},
+{x: 469.523, y: 84.771},
+{x: 520.815, y: 92.0},
+{x: 484.758, y: 70.483},
+{x: 487.758, y: 88.9},
+{x: 472.407, y: 83.056},
+{x: 481.439, y: 98.822},
+{x: 446.666, y: 86.859},
+{x: 502.959, y: 91.333},
+{x: 505.697, y: 83.185},
+{x: 498.129, y: 78.262},
+{x: 433.617, y: 78.455},
+{x: 452.514, y: 89.921},
+{x: 505.216, y: 86.601},
+{x: 495.576, y: 93.206},
+{x: 500.156, y: 94.539}]
+
+ var scatterChart2 = new Chart('myChart4', {
+    type: 'scatter',
+    data: {
+       labels: l_int,
+       datasets: [{
+          label: 'Internet use , Education',
+          data:d_int
+       }]
+    },
+    options: {
+       tooltips: {
+          callbacks: {
+             label: function(tooltipItem, data) {
+                var label = data.labels[tooltipItem.index];
+                return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+             }
+          }
+       }
+    }
+ });
+
+
+//  This is sixth chart
+d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv', function(err, rows){
+    //   function unpack(rows, key) {
+    //       return rows.map(function(row) { return row[key]; });
+    //   }
+
+      var data = [{
+          type: 'choropleth',
+          locationmode: 'ISO-3',
+          locations: ['AD',
+          'AL',
+          'AT',
+          'AZ',
+          'BEL',
+          'BGR',
+          'CH',
+          'CYP',
+          'CZE',
+          'DEU',
+          'DNK',
+          'EA18',
+          'EA19',
+          'EE',
+          'EL',
+          'ESP',
+          'EU27_2020',
+          'FIN',
+          'FRA',
+          'GE',
+          'HRV',
+          'HUN',
+          'IE',
+          'ISL',
+          'ITA',
+          'LI',
+          'LTU',
+          'LUX',
+          'LVA',
+          'ME',
+          'MK',
+          'MLT',
+          'NLD',
+          'NOR',
+          'POL',
+          'PRT',
+          'ROU',
+          'RUS',
+          'SWE',
+          'SI',
+          'SVK',
+          'SM',
+          'TUR',
+          'UAH'],
+                  //   z: unpack(rows, 'total exports'),
+          z : [79535,
+            2793592,
+            8978929,
+            10156366,
+            11631136,
+            6838937,
+            8736510,
+            904705,
+            10516707,
+            83237124,
+            5873420,
+            340080986,
+            342886984,
+            1331796,
+            10603810,
+            47432805,
+            446828803,
+            5548241,
+            67842582,
+            3688647,
+            3879074,
+            9689010,
+            5060005,
+            376248,
+            58983122,
+            39308,
+            2805998,
+            645397,
+            1875757,
+            617683,
+            1836713,
+            520971,
+            17590672,
+            5425270,
+            37654247,
+            10352042,
+            19038098,
+            6797105,
+            10452326,
+            2107180,
+            5434712,
+            33698,
+            84680273,
+            40997698],
+        //   text: unpack(rows, 'state'),
+          zmin: 33698,
+          zmax: 50682883,
+          colorscale: [
+              [0, 'rgb(205, 185, 185)'], [0.2, 'rgb(205, 185, 185)'],
+              [0.4, 'rgb(205, 185, 185)'], [0.5, 'rgb(205, 185, 185)'],
+              [0.7, 'rgb(205, 62, 62)'], [1, 'rgb(205, 0, 0)']
+          ],
+          colorbar: {
+              title: 'Mean performance on reading scale',
+              thickness: 10
+          },
+          marker: {
+              line:{
+                  color: 'rgb(255,255,255)',
+                  width: 2
+              }
+          }
+      }];
+
+
+      var layout = {
+          title: 'Education rate in Europe',
+          geo:{
+              scope: 'europe'
+          },
+          paper_bgcolor:'rgba(0,0,0,0)',
+          plot_bgcolor:'rgba(0,0,0,0)'
+      };
+
+      Plotly.newPlot("myDiv2", data, layout, {showLink: false});
+});
 
 
 (function ($) {
