@@ -678,6 +678,86 @@ d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_expo
 });
 
 
+
+// This is the seventh chart
+
+
+
+const data = {
+    labels:['Austria',
+    'Belgium',
+    'Bulgaria',
+    'Cyprus',
+    'Czechia',
+    'Germany',
+    'Denmark',
+    'Estonia',
+    'Spain',
+    'Finland',
+    'France',
+    'Croatia',
+    'Hungary',
+    'Ireland',
+    'Italy',
+    'Lithuania',
+    'Luxembourg',
+    'Latvia',
+    'Malta',
+    'Netherlands',
+    'Poland',
+    'Portugal',
+    'Romania',
+    'Sweden',
+    'Slovenia',
+    'Slovakia'],
+    datasets: [{
+      label: 'First Dataset',
+      data: [{x: 87.529, y: 56.118, r: 5.113},
+      {x: 91.526, y: 70.54, r: 6.716},
+      {x: 70.16, y: 0.0, r: 3.819},
+      {x: 90.802, y: 11.749, r: 0.232},
+      {x: 81.339, y: 58.636, r: 6.042},
+      {x: 89.813, y: 81.711, r: 50.0},
+      {x: 96.549, y: 71.903, r: 3.235},
+      {x: 89.058, y: 92.311, r: 0.49},
+      {x: 93.206, y: 67.428, r: 28.357},
+      {x: 92.17, y: 100.0, r: 3.039},
+      {x: 84.8, y: 71.366, r: 40.694},
+      {x: 78.321, y: 58.228, r: 2.03},
+      {x: 84.771, y: 39.919, r: 5.542},
+      {x: 92.0, y: 94.077, r: 2.744},
+      {x: 70.483, y: 56.005, r: 35.339},
+      {x: 83.056, y: 42.963, r: 1.381},
+      {x: 98.822, y: 52.5, r: 0.075},
+      {x: 88.9, y: 59.172, r: 0.819},
+      {x: 86.859, y: 15.784, r: 0.0},
+      {x: 91.333, y: 75.223, r: 10.318},
+      {x: 83.185, y: 78.114, r: 22.446},
+      {x: 78.262, y: 70.123, r: 5.943},
+      {x: 78.455, y: 2.005, r: 11.193},
+      {x: 94.539, y: 72.263, r: 6.003},
+      {x: 86.601, y: 77.606, r: 0.959},
+      {x: 89.921, y: 21.959, r: 2.97}],
+      backgroundColor: 'rgb(255, 99, 132)'
+    }]
+  };
+
+  var scatterChart = new Chart('myChart5', {
+    type: 'bubble',
+    data: data,
+    options: {
+    //    tooltips: {
+    //       callbacks: {
+    //          label: function(tooltipItem, data) {
+    //             var label = data.labels[tooltipItem.index];
+    //             return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+    //          }
+    //       }
+    //    }
+    }
+ });
+
+
 (function ($) {
     "use strict";
 
