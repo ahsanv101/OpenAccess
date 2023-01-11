@@ -27,6 +27,20 @@ var cha = new Chart("myChart", {
                 ticks: {
                     autoSkip: false
                 }
+            },
+            x: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'Percentage of population',
+                    font: {
+                        family: 'Times',
+                        size: 20,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
+                }
             }
         },
 
@@ -57,6 +71,20 @@ var cha1 = new Chart("myChart2", {
             y: {
                 ticks: {
                     autoSkip: false
+                }
+            },
+            x: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'Percentage of population',
+                    font: {
+                        family: 'Times',
+                        size: 20,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
                 }
             }
         },
@@ -141,11 +169,43 @@ var scatterChart = new Chart('myChart3', {
     data: {
        labels: l3,
        datasets: [{
-          label: 'Internet use , Unemployement',
+          label: 'Internet use vs Unemployement',
           data:d5
        }]
     },
     options: {
+        scales: {
+
+            x: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'Percentage of intenet users',
+                    font: {
+                        family: 'Times',
+                        size: 30,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
+                }
+            },
+            y: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'Percentage of unemployment',
+                    font: {
+                        family: 'Times',
+                        size: 30,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
+                }
+            }
+            
+          },
        tooltips: {
           callbacks: {
              label: function(tooltipItem, data) {
@@ -455,7 +515,7 @@ d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_expo
           geo:{
               scope: 'europe'
           },
-          paper_bgcolor:'rgba(0,0,0,0)',
+        //   paper_bgcolor:'rgba(0,0,0,0)',
           plot_bgcolor:'rgba(0,0,0,0)'
       };
 
@@ -534,6 +594,38 @@ d_int=[{x: 484.866, y: 87.529},
        }]
     },
     options: {
+        scales: {
+
+            x: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'PISA Mean score',
+                    font: {
+                        family: 'Times',
+                        size: 30,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
+                }
+            },
+            y: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'Percentage of internet users',
+                    font: {
+                        family: 'Times',
+                        size: 30,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
+                }
+            }
+            
+          },
        tooltips: {
           callbacks: {
              label: function(tooltipItem, data) {
@@ -555,13 +647,13 @@ d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_expo
       var data = [{
           type: 'choropleth',
           locationmode: 'ISO-3',
-          locations: ['AD',
-          'AL',
-          'AT',
-          'AZ',
+          locations: ['AND',
+          'ALB',
+          'AUT',
+          'AZE',
           'BEL',
           'BGR',
-          'CH',
+          'CHE',
           'CYP',
           'CZE',
           'DEU',
@@ -569,23 +661,23 @@ d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_expo
           'EA18',
           'EA19',
           'EE',
-          'EL',
+          'SLV',
           'ESP',
           'EU27_2020',
           'FIN',
           'FRA',
-          'GE',
+          'GEO',
           'HRV',
           'HUN',
-          'IE',
+          'IRL',
           'ISL',
           'ITA',
-          'LI',
+          'LIE',
           'LTU',
           'LUX',
           'LVA',
-          'ME',
-          'MK',
+          'MNE',
+          'MKD',
           'MLT',
           'NLD',
           'NOR',
@@ -594,9 +686,9 @@ d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_expo
           'ROU',
           'RUS',
           'SWE',
-          'SI',
+          'SVN',
           'SVK',
-          'SM',
+          'SMR',
           'TUR',
           'UAH'],
                   //   z: unpack(rows, 'total exports'),
@@ -646,14 +738,14 @@ d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_expo
             40997698],
         //   text: unpack(rows, 'state'),
           zmin: 33698,
-          zmax: 50682883,
+          zmax: 84682883,
           colorscale: [
               [0, 'rgb(205, 185, 185)'], [0.2, 'rgb(205, 185, 185)'],
-              [0.4, 'rgb(205, 185, 185)'], [0.5, 'rgb(205, 185, 185)'],
-              [0.7, 'rgb(205, 62, 62)'], [1, 'rgb(205, 0, 0)']
+              [0.3, 'rgb(205, 185, 185)'], [0.4, 'rgb(205, 185, 185)'],
+              [0.6, 'rgb(205, 62, 62)'], [1, 'rgb(205, 0, 0)']
           ],
           colorbar: {
-              title: 'Mean performance on reading scale',
+              title: 'Population scale',
               thickness: 10
           },
           marker: {
@@ -666,11 +758,11 @@ d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_expo
 
 
       var layout = {
-          title: 'Education rate in Europe',
+          title: 'Population rate in Europe',
           geo:{
               scope: 'europe'
           },
-          paper_bgcolor:'rgba(0,0,0,0)',
+        //   paper_bgcolor:'rgba(0,0,0,0)',
           plot_bgcolor:'rgba(0,0,0,0)'
       };
 
@@ -711,7 +803,7 @@ const data = {
     'Slovenia',
     'Slovakia'],
     datasets: [{
-      label: 'First Dataset',
+      label: 'Population in radius',
       data: [{x: 87.529, y: 56.118, r: 5.113},
       {x: 91.526, y: 70.54, r: 6.716},
       {x: 70.16, y: 0.0, r: 3.819},
@@ -746,6 +838,151 @@ const data = {
     type: 'bubble',
     data: data,
     options: {
+        scales: {
+
+            x: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'Percentage of internet users',
+                    font: {
+                        family: 'Times',
+                        size: 30,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
+                }
+            },
+            y: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'PISA Mean score (normalized)',
+                    font: {
+                        family: 'Times',
+                        size: 30,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
+                }
+            }
+            
+          }
+    //    tooltips: {
+    //       callbacks: {
+    //          label: function(tooltipItem, data) {
+    //             var label = data.labels[tooltipItem.index];
+    //             return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+    //          }
+    //       }
+    //    }
+    }
+ });
+
+ const data2 = {
+    labels:['Austria',
+    'Belgium',
+    'Bulgaria',
+    'Croatia',
+    'Cyprus',
+    'Czechia',
+    'Denmark',
+    'Estonia',
+    'Finland',
+    'France',
+    'Germany',
+    'Greece',
+    'Hungary',
+    'Ireland',
+    'Italy',
+    'Latvia',
+    'Lithuania',
+    'Luxembourg',
+    'Malta',
+    'Netherlands',
+    'Poland',
+    'Portugal',
+    'Romania',
+    'Slovakia',
+    'Slovenia',
+    'Spain',
+    'Sweden'],
+    datasets: [{
+      label: 'Unemployment rate (normalized) in radius',
+      data: [{x: 87.529, y: 56.118, r: 14.935},
+      {x: 91.526, y: 70.54, r: 12.338},
+      {x: 70.16, y: 0.0, r: 9.091},
+      {x: 78.321, y: 58.228, r: 16.883},
+      {x: 90.802, y: 11.749, r: 21.429},
+      {x: 81.339, y: 58.636, r: 0.0},
+      {x: 96.549, y: 71.903, r: 11.039},
+      {x: 89.058, y: 92.311, r: 16.234},
+      {x: 92.17, y: 100.0, r: 21.429},
+      {x: 84.8, y: 71.366, r: 19.481},
+      {x: 89.813, y: 81.711, r: 3.896},
+      {x: 78.116, y: 37.296, r: 43.506},
+      {x: 84.771, y: 39.919, r: 5.195},
+      {x: 92.0, y: 94.077, r: 15.584},
+      {x: 70.483, y: 56.005, r: 22.078},
+      {x: 88.9, y: 59.172, r: 20.779},
+      {x: 83.056, y: 42.963, r: 20.13},
+      {x: 98.822, y: 52.5, r: 10.39},
+      {x: 86.859, y: 15.784, r: 2.597},
+      {x: 91.333, y: 75.223, r: 7.792},
+      {x: 83.185, y: 78.114, r: 1.299},
+      {x: 78.262, y: 70.123, r: 16.234},
+      {x: 78.455, y: 2.005, r: 8.442},
+      {x: 89.921, y: 21.959, r: 16.883},
+      {x: 86.601, y: 77.606, r: 7.792},
+      {x: 93.206, y: 67.428, r: 50.0},
+      {x: 94.539, y: 72.263, r: 29.87}],
+      backgroundColor: 'rgb(255, 255, 255)'
+    }]
+  };
+
+ var scatterChart = new Chart('myChart6', {
+    type: 'bubble',
+    data: data2,
+    options: {
+        title: {
+            display: true,
+            text: 'TITLE',
+            fontSize: 14,
+          },
+          scales: {
+
+            x: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'Percentage of internet users',
+                    font: {
+                        family: 'Times',
+                        size: 30,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
+                }
+            },
+            y: {
+                display:true,
+                title:{
+                    display:true,
+                    text:'PISA Mean score (normalized)',
+                    font: {
+                        family: 'Times',
+                        size: 30,
+                        style: 'normal',
+                        // lineHeight: 1.2
+                      },
+                    //   padding: {top: 30, left: 0, right: 0, bottom: 0}
+                }
+            }
+            
+          },
     //    tooltips: {
     //       callbacks: {
     //          label: function(tooltipItem, data) {
