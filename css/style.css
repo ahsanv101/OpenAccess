@@ -327,3 +327,7 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+.div p a:hover{
+    color:white;
+}
