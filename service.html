@@ -33,7 +33,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Scripts -->
- 
+
 </head>
 
 <body>
@@ -69,6 +69,7 @@
                         <a href="404.html" class="dropdown-item">404 Page</a> -->
                     </div>
                 </div>
+                <a href="metadata.html" class ="nav-item nav-link">Metadata</a>
                 <a href="contact.html" class="nav-item nav-link">About Us</a>
             </div>
             <!-- <a href="" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a> -->
@@ -98,166 +99,155 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <!-- <p class="d-inline-block bg-secondary text-primary py-1 px-4">Visualization 1</p> -->
-                
+
             </div>
             <div class="div">
                 <h1 class="text-uppercase">Use of Internet</h1>
-                    <p>First we are interested in looking at the use of internet throughout Europe.
+                    <p>First, we are interested in looking at the use of internet throughout Europe.
                         From the datasets we have gathered, we take out the latest percentages of the population that
-                        use internet within the European nations.</p>
-                        
-                       <p>The graph below illustrates that data:</p>  
+                        use internet within the European nations (in this case, of the year 2020).</p>
+
+                       <p>The graph below illustrates that data:</p>
                     <div style="height: 500px">
                         <canvas id="myChart"></canvas>
-                     
+
                     </div>
                     <p> <a href="">Download dataset</a></p>
-                    <p>We can observe from the above graph that Denmark leads the race with approximately 36% of the popualtions
-                        using the internet whereas Bosnia and Herzegovina being the lowest.
-                    </p>  
+                    <p>We can observe from the above graph that Denmark leads the race, with approximately 36% of its population using the internet, whereas Bosnia and Herzegovina has the lowest rate of internet users (in proportion to its population).
+                    </p>
 
                     <br>
                     <h1 class="text-uppercase">Unemployment rate</h1>
 
                     <p>Similarly, we are now interested in looking into the unemployment percentage of the population for
-                        each of the European nations. We take the latest data available and map it accordingly.
+                        each of the European nations. We take the latest data available (2021) and map it accordingly.
                     </p>
-                    <p>Here is the graph:</p>
-                  
-                    
-                    <div style="height: 500px">      
+                    <p>The graph below illustrates that data:</p>
+
+
+                    <div style="height: 500px">
                         <canvas id="myChart2"></canvas>
                     </div>
                     <p> <a href="">Download dataset</a></p>
-                    <p>We can notice that Spain shows the highest percentage of unemployment whereas Czechia having the lowest.</p>
+                    <p>We can notice that Spain shows the highest rates of unemployment, whereas Czechia has the lowest.</p>
 
                     <br>
-                    <h1 class="text-uppercase">Internet use vs unemployment</h1>
+                    <h1 class="text-uppercase">Internet use with respect to unemployment</h1>
 
                     <p>Now, we are interested in finding a relation between the two data graphs above. </p>
-                    <p>Here is the scatterplot of the two varibales:</p>
+                    <p>The scatterplot of the two variables can make us visualize this relationship:</p>
 
-                    <div style="height: 500px">      
+                    <div style="height: 500px">
                         <canvas id="myChart3"></canvas>
                     </div>
                     <p> <a href="">Download dataset</a></p>
 
-                    <p>It comes to our notice that most of the plot points show no such correlation between the two datasets.
-                        There are some countries with low unemployment rate who also have low internet users but there are also cases
-                        where there is high internet user percentage but still low unemployment rate. 
+                    <p>It comes to our attention that most of the plot points do not show a correlation between the two datasets.
+                        There are some countries with low unemployment rates, who also have a low percentage of internet users, and there are also countries where there are high percentages of internet users, but still with low unemployment rates.
                     </p>
-                    <p>The most interesting thing to notice here is that there are a group of countries like Italy, Portugal
+                    <p>The most interesting thing to notice here is that there is a group of countries like Italy, Portugal
                         , Croatia, France, Slovakia etc. who have similar
-                        relations where their internet user percentages are between 12-16% and unemployment percentage 
-                        between 3-6%. 
+                        relations, in which their internet user percentages are between 12-16% and their unemployment percentages
+                        between 3-6%.
+                    </p>
+                    <p>
+                      From these two observations we can make an ambivalent deduction on the relationship between these two aspects: while for some European countries, internet use and employment levels seem to be correlated, it is not the case for the globality of European economies. Our second hypothesis, that internet adoption has a determinant role in employment rates, is as such only relatively verified - that is, relative to a certain group of countries in Europe.
                     </p>
                     <br>
 
                     <h1 class="text-uppercase">Education</h1>
 
-                    <p>Next we are interested in understand the education level in Europe. There are many ways to conduct 
-                        researches in order to measure a country's education rate. For our project we used a dataset which relies
-                        on PISA assessment. The Program for International Student Assessment (PISA) assessment,
-                         is coordinated by the OECD and is the most well known international assessment of learning outcomes. 
-                        The first PISA study was carried out in 1997 and since then it was repeated every three years. We took the latest PISA score 
-                        in reading literacy as a scale to measure education rates within the European nations. 
-                        <p>Here is the heatmap of the dataset below:</p>
+                    <p>Then, we are interested in looking at education levels in Europe. There are many ways to conduct
+                        researches in order to measure a country's education rate. For our project, we used a dataset which relies
+                        on PISA assessment, which best hints as to the quality of different educational systems. The Program for International Student Assessment (PISA) assessment,
+                         is coordinated by the OECD and is the most well known international assessment of learning outcomes.
+                        The first PISA study was carried out in 1997 and since then it was repeated every three years. We took the latest PISA score
+                        in reading literacy as a scale to measure education quality across European countries.
+                        <p>The heatmap below illustrates that data:</p>
                     </p>
 
-                    <div style="height: 500px">    
+                    <div style="height: 500px">
                         <div id='myDiv'></div>
-                        
+
                     </div>
                     <p> <a href="">Download dataset</a></p>
-                    <p>It comes to our attention that countries like Norway, Finland, Sweden etc show a higher score, indicating that 
-                        northern European states have a slightly higher PISA score rate which can be interpreted as 
-                        northern Europe having a slightly higher education score as well. 
+                    <p>It comes to our attention that countries like Norway, Finland, Sweden etc. show a higher score, indicating that
+                        northern European states have a slightly higher PISA score rate, which can be interpreted as
+                        northern Europe having a slightly higher education quality, in terms of literacy.
                     </p>
                     <br>
-                    <h1 class="text-uppercase">Internet use vs education</h1>
+                    <h1 class="text-uppercase">Internet use with respect to education</h1>
 
-                    <p>Now we will combine the two datasets we have to get a general understanding of the relation between percentage of
-                        internet users and education score (PISA score) of the European states. </p>
-                        <P>Here is the scatterplot of the two datasets:</P>
+                    <p>Now, we will combine the two datasets of education levels and internet use to get a general understanding of the relation between these two aspect in European countries. </p>
+                        <P>The scatterplot below allows us to visualize the relationship between the two datasets:</P>
 
-                    <div style="height: 500px">      
+                    <div style="height: 500px">
                         <canvas id="myChart4"></canvas>
                     </div>
                     <p> <a href="">Download dataset</a></p>
-                    <p>We can infer from the graph above a clear relation between the two variables. We see a postive relation between 
-                        PISA mean score and percentage of intenet users. Countries like Romania, Bulgaria, Greece etc. show 
-                        a low PISA score and also a low percentage of internet users. Consequently, countries like Germany, Finland,
+                    <p>We can infer from the graph above a clear relationship between the two variables. We see a postive correlation between
+                        PISA mean score and the percentage of internet users, as for European countries. Countries like Romania, Bulgaria, Greece etc. show
+                        a low PISA score and also a low percentage of internet users. Inversely, countries like Germany, Finland,
                         Ireland etc show a high percentage of internet users and a high PISA score.
                     </p>
-                    <p>This result can be interpreted in a way where we infer some relationship between internet users and education. 
-                        We could very well say from the graph above that accordingly to our data, higher use of internet leads to a higher
-                        education rate.
+                    <p>This result can be interpreted as the proof of strong link between education levels and the adoption of internet technology. According to our data, larger internet use may lead to higher education levels, or higher education levels may lead to larger internet use: though we cannot infer a causation between one and the other (just a correlation). Nevertheless our third hypothesis - that education levels is rather independant from internet adoption - seems to be proven wrong by our data.
                     </p>
 
                     <br>
 
-                    <h1 class="text-uppercase">Catering to population</h1>
+                    <h1 class="text-uppercase">Catering to the population</h1>
 
-                    <p>In order to get a more in-depth understanding of our datasets we need to understand the population rates of
-                        the countries we are trying to analyze as well.</p>
-                        <p>Here is a heatmap of the latest figures of populations in Europe from our datasets</p>
+                    <p>In order to get a more in-depth understanding of our datasets, we need to integrate the population rates of the countries we are trying to analyze, as well.</p>
+                        <p>The heatmap below illustrates the latest figures of populations in Europe according to our datasets (as of the 1st January of 2022)</p>
 
-                    <div style="height: 500px">    
+                    <div style="height: 500px">
                         <div id='myDiv2'></div>
-                        
+
                     </div>
                     <p> <a href="">Download dataset</a></p>
-                    <p>We can see that central/southern Europe have a more denser population compared to other regions within Europe.</p>
-
+                    <p>It comes to our attention that central and southern Europe has a denser population, compared to other regions of the continent.</p>
                     <br>
-                    <h1 class="text-uppercase">Internet use vs education with population</h1>
-
-                    <p>Now that we are considering population into our formula we can map that out as well.</p>
-                    <p>Here is a scatterplot of percentage of internet users and PISA mean score where the radius
-                        of each data point represents the population. It is important to note here that PISA mean score as been normalized to a scale
-                        from 1-100 whereas population percentage as been normalized to 1-50:
+                    <h1 class="text-uppercase">Internet use with respect to education, catered with population</h1>
+                    <p>Now that we are taking in population into account we can map that.</p>
+                    <p>The scatterplot below makes us visualize the percentage of internet users in relation with PISA mean scores, where the radius
+                        of each data point represents the population:
                     </p>
 
-                    <div style="height: 500px">      
+                    <div style="height: 500px">
                         <canvas id="myChart5"></canvas>
                     </div>
                     <p> <a href="">Download dataset</a></p>
-                    <p>One of the most important reasons to take population into account was to understand the percentage of 
-                        internet users and whether the population size has some impact on it or not since it that the percentage of internet
-                        users was in terms of population size. 
-                        <p>We can see from the graph above that popualtion does not effect the 
-                        interpretation of our results. There are countries with large population who still have a high internet user percentage
-                        whereas there are also countries with low popualtion and still a high internet user percentage.</p>
+                    <p>It is important to note here that PISA mean scores have been normalized on a scale
+                    from 1 to 100 whereas population percentages have been normalized on a scale from 1 to 50</p>
+                    <p>One of the most important reasons to take population into account was to understand the percentage of
+                        internet users, and whether the population size has some impact on this aspect or not, since the percentage of internet users of a country was calculated in terms of its population size.
+                        <p>We can see from the graph above that population size does not affect the
+                        interpretation of our results. There are countries with large populations, who have a high internet user percentage,
+                        and there are also countries with smaller populations that still have a high internet user percentage.</p>
                     </p>
                     <br>
-                    <h1 class="text-uppercase">Internet use vs education vs unemployment</h1>
+                    <h1 class="text-uppercase">Internet use with respect to education <i>and</i> with respect to unemployment</h1>
 
-                    <p>Finally we can move towards our final question. To see the relation between intenet, education and unemployment.</p>
-                    <p>After taking and merging all the relevent data, we produce the graph below. It is important to note that both
-                        the PISA mean score and unemployment rate has been normalized in order to better visualize them:</p>
+                    <p>Finally, we can move towards our ultimate question, to look at the relation between internet use, education levels and unemployment rates accross European countries.</p>
+                    <p>After collecting and merging all the relevent data, we produced the graph below:</p>
 
-                    <div style="height: 500px">      
+                    <div style="height: 500px">
                         <canvas id="myChart6"></canvas>
                     </div>
 
                     <p> <a href="">Download dataset</a></p>
-                    <p>We had already concluded that there is some relation between education and internet user percentage.
-                        Now once we plug in unemployment rate we get the full picture. 
+                    <p>It is important to note that both the PISA mean score and unemployment rate has been normalized in order to better visualize them</p>
+                    <p>We had already deduced a strong relationship between education levels and internet use, as well as an ambivalent relationship between internet use and unemployment levels. Now, we can integrate each of these three variables with each other, to get the full picture on the relationship between these different aspects of our analysis.
                     </p>
-                    <p>We see that at  Countries
-                         like Sweden, Spain, Latvia etc. have higher 
-                        PISA score but also higher unemployment rate. However, there are counties like Finland, Slovania, Germany, Poland etc. who have 
+                    <p>We observe that countries
+                         like Sweden, Spain, Latvia etc. have higher
+                        PISA score but also higher unemployment rate. However, there are also countries like Finland, Slovania, Germany, Poland etc. who have
                         a relatively high
-                        PISA score but they have lower unemployment rate. 
+                        PISA score, but that have lower unemployment rate. This goes to show that unemployment rate is not determined by education levels, according to our data - that is, we can infer a non-causation between these two aspects, despite that we assumed the contrary in our first hypothesis.
                     </p>
-                    <p>This goes to show that unemployment rate is not dependent on education score according to the data we have. Similarly, there 
-                        is no such pattern of any relation between percentage of internet users and unemployment rate as well because 
-                        no such relation can be detected from the visualizations from the data we used.
-                    </p>
-                    
-            </div>      
+            </div>
         </div>
-                    
+
                     <!-- <button onclick="updateConfigByMutating(cha,2011)">2011</button>
                     <button onclick="updateConfigByMutating(cha,2012)">2012</button>
                     <button onclick="updateConfigByMutating(cha,2013)">2013</button>
@@ -269,7 +259,7 @@
                     <button onclick="updateConfigByMutating(cha,2019)">2019</button>
                     <button onclick="updateConfigByMutating(cha,2020)">2020</button>
                     <button onclick="updateConfigByMutating(cha,2021)">2021</button> -->
-         
+
             <!-- <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
@@ -350,7 +340,7 @@
                     </div>
                 </div>
             </div> -->
-    
+
     </div>
     <!-- Service End -->
 
@@ -378,7 +368,7 @@
                     <p class="text-primary">Profession</p>
                     <span class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
                 </div>
-            </div>      
+            </div>
         </div>
     </div> -->
     <!-- Testimonial End -->
@@ -397,7 +387,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <h4 class="text-uppercase mb-4">Get In Touch</h4>
-                  
+
                     <div class="d-flex align-items-center">
                         <div class="btn-square bg-dark flex-shrink-0 me-3">
                             <span class="fa fa-envelope-open text-primary"></span>
@@ -405,10 +395,10 @@
                         <p><span>muhammadahsan.syed@studio.unibo.it</span>
                         <br>
                         <span>victor.chaix@studio.unibo.it</span>
-                        </p>           
+                        </p>
                     </div>
                 </div>
-                
+
                 <!-- <div class="col-lg-4 col-md-6">
                     <h4 class="text-uppercase mb-4">Newsletter</h4>
                     <div class="position-relative mb-4">
