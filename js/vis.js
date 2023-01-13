@@ -8,7 +8,7 @@ var d = [4.91, 12.38, 14.37, 4.43, 6.66, 14.72, 9.42, 6.41, 36.33, 13.42, 19.83,
         // var countData = data.map(function (d) {
         //   return d.count;
         // });
-    
+
 var cha = new Chart("myChart", {
     type: "bar",
     data: {
@@ -180,7 +180,7 @@ var scatterChart = new Chart('myChart3', {
                 display:true,
                 title:{
                     display:true,
-                    text:'Percentage of intenet users',
+                    text:'Percentage of internet users',
                     font: {
                         family: 'Times',
                         size: 30,
@@ -204,7 +204,7 @@ var scatterChart = new Chart('myChart3', {
                     //   padding: {top: 30, left: 0, right: 0, bottom: 0}
                 }
             }
-            
+
           },
        tooltips: {
           callbacks: {
@@ -224,7 +224,7 @@ var scatterChart = new Chart('myChart3', {
 
 
 function updateConfigByMutating(chart,year) {
- 
+
 
     chart.data.labels=[];
     chart.data.datasets.forEach((dataset) => {
@@ -238,15 +238,15 @@ function updateConfigByMutating(chart,year) {
     var l2011 = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'EU27_2007', 'EU27_2020', 'EU28', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Norway', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'United Kingdom']
     var d2011 = [20.52, 14.16, 11.72, 19.84, 7.01, 7.27, 26.9, 16.68, 15.41, 16.71, 24.79, 26.79, 14.95, 18.18, 12.91, 20.04, 26.33, 19.58, 11.91, 27.05, 13.54, 14.56, 19.95, 18.64, 29.6, 11.49, 11.04, 8.84, 17.73, 13.76, 16.445, 25.92, 26.17]
 
-    // var l2012 = 
-    // var d2012 = 
+    // var l2012 =
+    // var d2012 =
 
     var l2013 = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'EU27_2007', 'EU27_2020', 'EU28', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'North Macedonia', 'Norway', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Turkey', 'United Kingdom']
     var d2013 = [18.32, 14.54, 9.86, 15.28, 11.36, 5.77, 22.36, 17.26, 16.06, 17.25, 20.28, 26.53, 17.75, 18.07, 15.98, 17.95, 26.51, 17.05, 13.46, 16.97, 12.22, 18.44, 20.09, 20.52, 15.76, 26.77, 11.22, 14.38, 7.61, 13.11, 15.81, 18.425, 28.84, 5.56, 25.88]
 
 
-    // var l2014 = 
-    // var d2014 = 
+    // var l2014 =
+    // var d2014 =
 
     var l2015 = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'EU27_2007', 'EU27_2020', 'EU28', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'North Macedonia', 'Norway', 'Poland', 'Portugal', 'Romania', 'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Turkey', 'United Kingdom'] ;
     var d2015 = [12.76, 18.24, 10.77, 16.37, 13.3, 5.24, 36.47, 17.2, 16.08, 17.19, 21.97, 26.76, 16.59, 18.97, 17.78, 16.77, 13.91, 12.42, 15.15, 12.24, 19.59, 23.05, 24.12, 14.71, 28.92, 9.87, 14.37, 6.45, 12.41, 10.27, 13.01, 18.715, 26.24, 5.17, 25.54];
@@ -260,18 +260,18 @@ function updateConfigByMutating(chart,year) {
     var l2021 = ['Albania', 'Austria', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'EU27_2020', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Montenegro', 'Netherlands', 'North Macedonia', 'Norway', 'Poland', 'Portugal', 'Romania', 'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Turkey'];
     var d2021 = [4.91, 12.38, 14.37, 4.43, 6.66, 14.72, 9.42, 6.41, 36.33, 13.42, 19.83, 34.18, 15.72, 7.75, 10.31, 16.59, 23.07, 21.43, 13.65, 12.3, 14.79, 15.22, 14.56, 14.71, 22.25, 6.94, 29.53, 5.96, 14.85, 5.04, 11.43, 15.28, 12.44, 16.48, 27.69, 24.06, 8.97];
 
-    // var l2014 = 
-    // var d2014 = 
+    // var l2014 =
+    // var d2014 =
 
-    // var l2014 = 
-    // var d2014 = 
+    // var l2014 =
+    // var d2014 =
 
-    // var l2014 = 
-    // var d2014 = 
+    // var l2014 =
+    // var d2014 =
     var newlabel=[];
     var data=[];
 
-    
+
     if(year = 2011){
         newlabel = l2011;
         data = d2011;
@@ -327,17 +327,17 @@ function updateConfigByMutating(chart,year) {
     //      data = d2021;
     // }
 
-  
-    
-    
-    
-      
+
+
+
+
+
     chart.update();
 
 }
 
 
-// This is fourth chart      
+// This is fourth chart
 d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv', function(err, rows){
     //   function unpack(rows, key) {
     //       return rows.map(function(row) { return row[key]; });
@@ -624,7 +624,7 @@ d_int=[{x: 484.866, y: 87.529},
                     //   padding: {top: 30, left: 0, right: 0, bottom: 0}
                 }
             }
-            
+
           },
        tooltips: {
           callbacks: {
@@ -868,7 +868,7 @@ const data = {
                     //   padding: {top: 30, left: 0, right: 0, bottom: 0}
                 }
             }
-            
+
           }
     //    tooltips: {
     //       callbacks: {
@@ -981,7 +981,7 @@ const data = {
                     //   padding: {top: 30, left: 0, right: 0, bottom: 0}
                 }
             }
-            
+
           },
     //    tooltips: {
     //       callbacks: {
@@ -1007,8 +1007,8 @@ const data = {
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -1021,8 +1021,8 @@ const data = {
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -1048,5 +1048,5 @@ const data = {
         dotsData: true,
     });
 
-    
+
 })(jQuery);
