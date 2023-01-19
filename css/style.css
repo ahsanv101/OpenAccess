@@ -336,3 +336,7 @@
   text-align:center;
   justify-content: center;
 }
+
+.notbold{
+  font-weight: normal;
+}
