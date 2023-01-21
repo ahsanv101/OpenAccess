@@ -39,3 +39,7 @@ We began our project by assuming these three hypothesis, as to the relationship 
 # LICENSE
 
 The project's contents, datasets and Github repository are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+
+# DISCLAIMER
+
+Our datasets have been created as part of a project within the Open Access and Digital Ethics course of the Master Degree in Digital Humanities and Digital Knowledge (DHDK), at the University of Bologna. Our mashed-up datasets are not actively maintained, while the datasets used for this project are currently maintained by the relative institutions or organisations.
