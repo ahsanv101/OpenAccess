@@ -17,54 +17,10 @@ To conduct this research, we collected data from three distinct organizations wh
 Link|Title|Origin|Subject|Last Updated|Time Range
 ---|---|---|---|---|---
 https://ec.europa.eu/eurostat/databrowser/view/tin00102/default/table?lang=en|Individuals using the internet for looking for a job or sending a job application|Eurostat|ICT|01/08/2022|2005-2021
-https://ec.europa.eu/eurostat/databrowser/view/tps00203/default/table?lang=en
-Total unemployment rate
-Eurostat
-Unemployement
-16/11/2022
-2010-2021
-https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table?lang=en
-Population on 1st January
-Eurostat
-Demography
-01/12/2022
-2011-2022
-http://data.un.org/Data.aspx?d=POP&f=tableCode%3a31
-Population by literacy, age, sex and urban/rural residence
-
-
-UN data
-Education
-2022/08/11
-1995-2020
-http://data.un.org/Data.aspx?d=POP&f=tableCode%3a39
-Population not economically active by functional category, age, sex and urban/rural residence
-
-
-UN data
-Demography
-2022/08/11
-1995-2020
-https://ourworldindata.org/technology-adoption#internet-access-technology
-INDIVIDUALS USING THE INTERNET (% OF POPULATION)
-
-
-
-
-Our World in Data
-
-(source - World Telecommunication / ICT Indicators Database - International Telecommunication Union))
-ICT 
-2022.05.26
-1990-2020
-https://ourworldindata.org/quality-of-education
-Average learning outcomes by total education expenditure per capita
-Our World in Data
-Education
-2018
-2005–2015
-
-
+https://ec.europa.eu/eurostat/databrowser/view/tps00203/default/table?lang=en|Total unemployment rate|Eurostat|Unemployement|16/11/2022|2010-2021
+https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table?lang=en|Population on 1st January|Eurostat|Demography|01/12/2022|2011-2022
+http://data.un.org/Data.aspx?d=POP&f=tableCode%3a31|Population by literacy, age, sex and urban/rural residence|UN data|Education|2022/08/11|1995-2020
+http://data.un.org/Data.aspx?d=POP&f=tableCode%3a39|Population not economically active by functional category, age, sex and urban/rural residence|UN data|Demography|2022/08/11|1995-2020
 
 # SCENARIO
 
