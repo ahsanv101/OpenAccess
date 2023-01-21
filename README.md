@@ -21,6 +21,8 @@ https://ec.europa.eu/eurostat/databrowser/view/tps00203/default/table?lang=en|To
 https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table?lang=en|Population on 1st January|Eurostat|Demography|01/12/2022|2011-2022
 http://data.un.org/Data.aspx?d=POP&f=tableCode%3a31|Population by literacy, age, sex and urban/rural residence|UN data|Education|2022/08/11|1995-2020
 http://data.un.org/Data.aspx?d=POP&f=tableCode%3a39|Population not economically active by functional category, age, sex and urban/rural residence|UN data|Demography|2022/08/11|1995-2020
+https://ourworldindata.org/grapher/share-of-individuals-using-the-internet|Share of individuals using the internet|Our World in Data|ICT|2022-06-02|1990-2020
+https://ourworldindata.org/grapher/pisa-test-score-mean-performance-on-the-reading-scale|PISA test score: mean performance on the reading scale|Our World in Data|Education|<br>|2000-2015
 
 # SCENARIO
 
