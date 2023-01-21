@@ -25,3 +25,7 @@ We began our project by assuming these three hypothesis, as to the relationship 
 1. We hypothesized that education level has a strong impact on the labor market.
 2. We assumed that use of internet technology has become a determining factor, alongside education levels, for European countries’ employment rates.
 3. Finally, we expected the correlation between education levels and internet use to be low - that is, we presumed that these two aspects are rather independent from each other.
+
+# LICENSE
+
+The project's contents, datasets and Github repository are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
