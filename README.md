@@ -14,11 +14,11 @@ Our project aims to show connections and disconnections between internet use, ed
 
 To conduct this research, we collected data from three distinct organizations which provide open access datasets, each with their own goals, licenses and formats.
 
-# Scenario
+# SCENARIO
 
 A flourishing labor market involves a couple of different factors, of which the interaction is complex and the main ingredients hardly distinguishable. While it is commonly assumed that education levels are the main determinant for countries’ employment rates, the use and access to internet technology can be seen as a rising factor for struggling against unemployment. Indeed, in the search for jobs, such information technology has become a crucial tool, to link employers with new employees, through the publication of job offers and the access of this information by the appropriate candidates. Through the datasets we collected and mashed-up together, we aim to provide an heterogeneous perspective on the complexity of contemporary economies and its increasingly technologically-mediated workforce.
 
-# Hypothesis
+# HYPOTHESIS
 
 We began our project by assuming these three hypothesis, as to the relationship that education level, labor market and internet use have with one another:
 
