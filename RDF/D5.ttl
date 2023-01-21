@@ -1,0 +1,51 @@
+@prefix adms: <http://www.w3.org/ns/adms#>. 
+@prefix dcat: <http://www.w3.org/ns/dcat#>. 
+@prefix dcatap: <http://data.europa.eu/r5r/>. 
+@prefix dct: <http://purl.org/dc/terms/>. 
+@prefix foaf: <http://xmlns.com/foaf/0.1/>. 
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>. 
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>. 
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+dcat:Dataset	dct:description	"This dataset is made from combining multiple datasets from various sources which contains latest data that shows us how internet is being used with respect to education data of countries within the European Union.";
+		dct:title	"datanomics - Internet use with respect to education";
+		dcat:contactPoint	vcard:Group;
+		dcat:distribution	dcat:Distribution;
+		dcat:keyword	"Internet";
+		dcat:keyword	"Education";
+		dcat:keyword	"ICT";
+ 		dct:publisher	foaf:Person;
+		dct:publisher	foaf:Person;
+		dct:spatial	<http://dbpedia.org/ontology/europe>;
+		dct:temporal	dct:PeriodOfTime;
+		dcat:theme	<http://publications.europa.eu/resource/authority/class-sum-leg/3103>;
+		dcat:theme	<http://publications.europa.eu/resource/authority/ux2/nace2/P>;
+		dct:accessRights	"Open";	
+		dct:creator 	foaf:Person;
+		dct:creator 	foaf:Person;
+		foaf:page	<https://ahsanv101.github.io/OpenAccess/index.html>;
+		dct:accrualPeriodicity	<http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
+	 	dct:identifier	<https://github.com/ahsanv101/OpenAccess/blob/last_working/data/INTERNET_USE_WITH_RESPECT_TO_EDUCATION.csv>;
+		dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
+		dct:issued	"2023/01/19";
+		dct:source	<https://ourworldindata.org/technology-adoption#internet-access-technology>;
+		dct:source	<https://ourworldindata.org/quality-of-education>;
+		dct:modified 	"2023/01/19";
+		prov:wasGeneratedBy	"Cleaning and analyzing dataset.";
+		prov:wasDerivedFrom "<https://ourworldindata.org/technology-adoption#internet-access-technology>";
+		prov:wasDerivedFrom "<https://ourworldindata.org/quality-of-education>".
+
+dcat:Distribution	dcat:accessURL	<https://ahsanv101.github.io/OpenAccess/index.html>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/CSV>;		
+			dct:license	<https://creativecommons.org/licenses/by-nc-sa/4.0/>;
+			dcat:byteSize	"3.12 KB";
+			adms:status	<http://purl.org/adms/status/Completed>.
+
+foaf:Person	foaf:name	"Ahsan Syed".
+
+foaf:Person	foaf:name	"Victor Chaix".
+
+<http://purl.org/adms/status/Completed>	skos:prefLabel	"Completed".
+
+<http://publications.europa.eu/resource/authority/class-sum-leg/3103>	skos:prefLabel	"Use of internet";
+<http://publications.europa.eu/resource/authority/ux2/nace2/P>	skos:prefLabel	"Education".
